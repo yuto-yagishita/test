@@ -51,7 +51,7 @@ public class DBtest extends AppCompatActivity {
         }
     };
 
-    //トースト表示
+    //トースト表示する
     private void toastMake(String message , int x, int y){
         Toast toast = Toast.makeText(this,message,Toast.LENGTH_LONG);
         //位置調整
