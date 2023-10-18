@@ -3,7 +3,10 @@ package com.example.body;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.database.Cursor;
+<<<<<<< HEAD
 import android.view.Gravity;
+=======
+>>>>>>> b605c7b7a08252553607ce386677776c9a2d0f77
 import android.widget.CalendarView;
 import android.widget.Toast;
 
@@ -38,6 +41,7 @@ public class DBtest extends AppCompatActivity {
         }
         dbManager.close();
 
+<<<<<<< HEAD
         //CalenderView
         ((CalendarView) findViewById(R.id.calendarView)).setOnDateChangeListener(listener);
     }
@@ -58,4 +62,17 @@ public class DBtest extends AppCompatActivity {
         toast.setGravity(Gravity.CENTER, x ,y);
         toast.show();
     }
+=======
+    }
+
+        CalendarView calendar = findViewById(R.id.calendarView);
+        calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+        @Override
+        public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
+            // 日付が選択されたときの処理
+            String selectedDate = year + "-" + (month + 1) + "-" + dayOfMonth; // 月は0から11の範囲なので+1する
+            Toast.makeText(getApplicationContext(), "選択された日付: " + selectedDate, Toast.LENGTH_SHORT).show();
+        }
+    });
+>>>>>>> b605c7b7a08252553607ce386677776c9a2d0f77
 }
