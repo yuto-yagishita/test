@@ -49,6 +49,7 @@ public class SelectActivity extends AppCompatActivity {
             food.setFoodName("ヨーグルト");
             food.setFood_krl(100.0);
             FoodList.add(food);
+            //変更した
 
             food = new Food();
             food.setFoodName("グリルチキンサラダ");
